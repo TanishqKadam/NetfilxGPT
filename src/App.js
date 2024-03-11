@@ -1,11 +1,8 @@
-
-import './App.css';
+import { Body } from "./Components/Body";
 
 function App() {
   return (
-    <div className='font-bold text-3xl text-green-700'>
-      Welcome this is namste react and we are building netfilxGPT
-    </div>
+    <Body/>
   );
 }
 
