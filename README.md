@@ -25,4 +25,5 @@ Features -
 - bugfix- if user is not logged in redirect /browse to login page and vice versa
 - unsubscribed to the onAuthStateChange callback 
 - keep constant url at one place constant.js
+- rigester for tmdb api and create api and get data from tmdb now playing movie list 
 - 
