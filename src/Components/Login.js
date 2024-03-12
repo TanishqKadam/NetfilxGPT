@@ -7,9 +7,10 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../Utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../Utils/userSlice";
+import { PHOTOURL } from "../Utils/constants";
+
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -17,7 +18,6 @@ const Login = () => {
   const email = useRef(null); //to get the enterend data from form. useRef()
   const password = useRef(null);
   const name = useRef(null);
-  const navigate = useNavigate();
   const dispatch =useDispatch();
 
   const toggleSignInForm = () => {
@@ -44,7 +44,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://example.com/jane-q-user/profile.jpg",
+            photoURL: PHOTOURL,
           })
             .then(() => {
               // Profile updated!
@@ -52,7 +52,6 @@ const Login = () => {
               const { uid, email, displayName,photoURL} = auth.currentUser; // to get the updated value from user we can use auth.currentUser which holds the updated info @user.
               //dispatch the user to store.
               dispatch(addUser({ uid: uid, email: email, displayName: displayName,photoURL:photoURL})); //put in our store beacuse we are updating name and photourl here so we need to update our store also for this .
-              navigate("/browse");
             })
             .catch((error) => {
               // An error occurred
@@ -76,7 +75,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log(user);
-          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;

@@ -21,4 +21,8 @@ Features -
 - created redux store with userSlice.
 - dispatch user when user sign in / sign out / sign up using firebase api ( signout feature ) --> updated profile name,photoUrl
 - /browse page - use tmdb api for latest movie api's netflix apis are not public need authentication for that. (fetch from tmdb movies)
+- bugfix- sign up user displayName and profile update
+- bugfix- if user is not logged in redirect /browse to login page and vice versa
+- unsubscribed to the onAuthStateChange callback 
+- keep constant url at one place constant.js
 - 
