@@ -26,4 +26,10 @@ Features -
 - unsubscribed to the onAuthStateChange callback 
 - keep constant url at one place constant.js
 - rigester for tmdb api and create api and get data from tmdb now playing movie list 
-- 
+- custome hooks for nowPlayingMovie 
+- update store with movieData 
+- planning for main and secondary container
+- fetch data for trailer video
+- update store with trailer video data
+- embedded utube video and make it autoplay and mute
+- tailwind css make main container to look awesome.
