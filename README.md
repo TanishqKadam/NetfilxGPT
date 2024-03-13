@@ -33,3 +33,4 @@ Features -
 - update store with trailer video data
 - embedded utube video and make it autoplay and mute
 - tailwind css make main container to look awesome.
+- build secondary component.
