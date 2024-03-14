@@ -34,3 +34,10 @@ Features -
 - embedded utube video and make it autoplay and mute
 - tailwind css make main container to look awesome.
 - build secondary component.
+- build movie list
+- build movie card
+- found out tmdb img url
+- usePopuler,useUpcoming , useTrending , useNowPlaying build this hooks and displyed on browse page.
+- GPT search feature (gptSearchBar) 
+- (FEATURE) added multilanguage functionality to gptSearchBar can select options between english , hindi , marathi , spanish to search movie from openAI api.
+- integrate GPT api (get open ai key).
