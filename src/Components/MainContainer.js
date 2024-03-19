@@ -10,7 +10,7 @@ const MainContainer = () => {
     if(movies === null) return ; //early return if there is no movie in store.
 
     const mainMovie = movies[0];
-    // console.log(mainMovie);
+    console.log(mainMovie);
 
     const {original_title,overview,id} = mainMovie;
 
