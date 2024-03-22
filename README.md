@@ -41,3 +41,9 @@ Features -
 - GPT search feature (gptSearchBar) 
 - (FEATURE) added multilanguage functionality to gptSearchBar can select options between english , hindi , marathi , spanish to search movie from openAI api.
 - integrate GPT api (get open ai key).
+- gptSearch api call - fetched gpt movies suggestions from tmdb 
+- created gptSlice 
+- reused MovieList component to make movie suggestions container 
+- done with memoisation
+- added .env file to git ignore
+- made site responsive.
