@@ -7,7 +7,7 @@ const MainContainer = () => {
     
     const movies = useSelector(store => store.movies?.nowPlayingMovies)
     
-    if(movies === null) return ; //early return if there is no movie in store.
+    if(movies === null || movies === undefined) return ; //early return if there is no movie in store.
 
     const mainMovie = movies[0];
     console.log(mainMovie);
